@@ -235,7 +235,7 @@ int Fun4All_G4_sPHENIX(
     {
       // toss low multiplicity dummy events
       PHG4SimpleEventGenerator *gen = new PHG4SimpleEventGenerator();
-      gen->add_particles("e-", 1);  // mu+,e+,proton,pi+,Upsilon
+      gen->add_particles("pi-", 1);  // mu+,e+,proton,pi+,Upsilon
       //gen->add_particles("pi+",100); // 100 pion option
       if (readhepmc || do_embedding || runpythia8 || runpythia6)
       {
@@ -254,7 +254,7 @@ int Fun4All_G4_sPHENIX(
       gen->set_vertex_size_parameters(0.0, 0.0);
       gen->set_eta_range(-1.0, 1.0);
       gen->set_phi_range(-1.0 * TMath::Pi(), 1.0 * TMath::Pi());
-      gen->set_pt_range(4, 4.0);
+      gen->set_pt_range(30, 30.0);
       gen->Embed(2);
       gen->Verbosity(0);
 
