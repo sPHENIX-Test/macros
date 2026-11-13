@@ -1,19 +1,19 @@
 //
-//   @file    sPhenixStyle.h         
-//   
+//   @file    sPhenixStyle.h
+//
 //            sPHENIX Style, based on a style file from ATLAS
 //
 //
 //   @author Peter Steinberg
-// 
+//
 //   Copyright (C) 2017 sPhenix Collaboration
 //
 //   Version 0.1
 
-#ifndef  __SPHENIXSTYLE_H
-#define __SPHENIXSTYLE_H
+#ifndef MACRO_SPHENIXSTYLE_H
+#define MACRO_SPHENIXSTYLE_H
 
-#include "TStyle.h"
+#include <TStyle.h>
 
 //! \brief sPHENIX Style, based on a style file from ATLAS by Peter Steinberg
 /*
@@ -46,6 +46,6 @@ and you're good to go (even better, add this all into your ``.rootlogon.C`` file
  */
 void SetsPhenixStyle();
 
-TStyle* sPhenixStyle(); 
+TStyle* sPhenixStyle();
 
-#endif // __SPHENIXSTYLE_H
+#endif  // MACRO_SPHENIXSTYLE_H

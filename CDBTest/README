@@ -1,0 +1,15 @@
+Setup:
+
+Please do not try the writing to the cdb, it is disabled and it's not needed - your job ends when you have created the file and read it back
+
+The calibration files will be written and read to the local directory (./)
+
+TestCDBTTree.C creates a small CDBTTree object and writes it to test.root
+
+TestCDBHistos.C creates a few histograms and writes them to test.root
+
+Do not mix CDBTTree and CDBHistos, you can only save only one or the other (likely, have't tried that)
+
+
+TestCDBRead.C reads the file back from the cdb trying different time stamps. The limited validity range does not work yet
+
